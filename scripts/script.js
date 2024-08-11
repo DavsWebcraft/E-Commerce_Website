@@ -292,7 +292,9 @@ async function renderProducts() {
 
       // Construct the inner HTML of the product card
       productCard.innerHTML = `
-        <a href="individual_product.html?id=${product.id}">
+        <a class="underline" href="../E-commerce/html_files/product.html?id=${
+          product.id
+        }">
           <img src="${product.image}" alt="${
         product.title
       }" class="product-img" />
@@ -300,7 +302,9 @@ async function renderProducts() {
           <p class="product-price">$${product.price.toFixed(2)}</p>
           <div class="rating">⭐⭐⭐⭐⭐</div>
         </a>
-        <button class="add-to-cart-btn">Add to Cart</button>
+        <div class="product-actions">
+            <button>Add to Cart</button>
+          </div>
       `;
 
       // Append the product card to the grid
