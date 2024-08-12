@@ -279,7 +279,7 @@ async function renderProducts() {
   const productsGrid = document.querySelector(".products-grid");
 
   // Call the API to get products
-  const products = await callApi("https://fakestoreapi.com/products");
+  const products = await callApi("https://fakestoreapi.com/products?limit=15");
 
   if (products && products.length > 0) {
     productsGrid.innerHTML = ""; //
