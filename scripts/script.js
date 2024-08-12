@@ -290,21 +290,18 @@ async function renderProducts() {
 
       // Construct the inner HTML of the product card
       productCard.innerHTML = `
-        <a class="underline" href="../E-Commerce_Website/html_files/product.html?id=${
-          product.id
-        }">
-          <img src="${product.image}" alt="${
-        product.title
-      }" class="product-img" />
-          <h4 class="product-title">${product.title}</h4>
-          <p class="product-price">$${product.price.toFixed(2)}</p>
-          <div class="rating">⭐⭐⭐⭐⭐</div>
-        </a>
-        <div class="product-actions">
-            <button>Add to Cart</button>
-          </div>
-      
-    `;
+  <a class="underline" href="/E-Commerce_Website/html_files/product.html?id=${
+    product.id
+  }">
+    <img src="${product.image}" alt="${product.title}" class="product-img" />
+    <h4 class="product-title">${product.title}</h4>
+    <p class="product-price">$${product.price.toFixed(2)}</p>
+    <div class="rating">⭐⭐⭐⭐⭐</div>
+  </a>
+  <div class="product-actions">
+    <button>Add to Cart</button>
+  </div>
+`;
 
       // Append the product card to the grid
       productsGrid.appendChild(productCard);
