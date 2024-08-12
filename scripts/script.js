@@ -297,10 +297,11 @@ async function renderProducts() {
     <h4 class="product-title">${product.title}</h4>
     <p class="product-price">$${product.price.toFixed(2)}</p>
     <div class="rating">⭐⭐⭐⭐⭐</div>
-  </a>
-  <div class="product-actions">
+    <div class="product-actions">
     <button>Add to Cart</button>
   </div>
+  </a>
+  
 `;
 
       // Append the product card to the grid
