@@ -291,7 +291,7 @@ async function renderProducts() {
       // Construct the inner HTML of the product card
       productCard.innerHTML = `
         <a class="underline" href="../html_files/product.html?id=${product.id}">
-          <img src="${product.image}" alt="${
+          <img src="${product.image}" alt=  
         product.title
       }" class="product-img" />
           <h4 class="product-title">${product.title}</h4>
