@@ -55,8 +55,6 @@ async function displayProductDetails() {
       document.querySelectorAll(".product-image").forEach((element) => {
         element.src = product.image;
       });
-
-      // Add other details as needed
     } catch (error) {
       console.error("Error:", error);
     }

@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const cartIcon = document.querySelector(".icons a");
   if (cartIcon) {
     cartIcon.addEventListener("click", (e) => {
-      e.preventDefault(); // Prevent default action
+      e.preventDefault();
       showCartContents();
     });
   }
@@ -204,7 +204,6 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
   const proceedButtons = document.getElementsByClassName("checkout-btn");
 
-  // Since getElementsByClassName returns a collection, you need to loop through it
   Array.from(proceedButtons).forEach(function (button) {
     button.addEventListener("click", function () {
       window.location.href = "../html_files/checkout.html";
@@ -245,13 +244,12 @@ async function renderCategories() {
   );
 
   if (categories && categories.length > 0) {
-    categoriesGrid.innerHTML = ""; // Clear any existing content
+    categoriesGrid.innerHTML = "";
 
     categories.forEach((category, index) => {
       const categoryCard = document.createElement("div");
       categoryCard.classList.add("category-card");
 
-      // Example images, adjust paths or fetch dynamic images if available
       const images = [
         "https://www.codrey.com/wp-content/uploads/2017/12/Consumer-Electronics.png",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIefp7jor2qwG3zzdkuIxf2rdSqXIbpZ0svQ&s",
@@ -284,7 +282,7 @@ async function renderProducts() {
   const products = await callApi("https://fakestoreapi.com/products");
 
   if (products && products.length > 0) {
-    productsGrid.innerHTML = ""; // Clear any existing content
+    productsGrid.innerHTML = ""; //
 
     products.forEach((product) => {
       const productCard = document.createElement("div");
