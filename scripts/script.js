@@ -290,7 +290,7 @@ async function renderProducts() {
 
       // Construct the inner HTML of the product card
       productCard.innerHTML = `
-        <a class="underline" href="../E-commerce/html_files/product.html?id=${
+        <a class="underline" href="../html_files/product.html?id=${
           product.id
         }">
           <img src="${product.image}" alt="${
