@@ -28,6 +28,12 @@ document.addEventListener("DOMContentLoaded", () => {
     alert(`${product.title} has been added to your cart.`);
   }
 
+  document
+    .getElementById("redirectButton")
+    .addEventListener("click", function () {
+      window.location.href = "/E-Commerce_Website/html_files/cart.html";
+    });
+
   // Event listener for the "Add to Cart" button
   if (addToCartButton) {
     addToCartButton.addEventListener("click", () => {
